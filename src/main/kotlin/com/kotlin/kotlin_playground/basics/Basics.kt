@@ -1,6 +1,6 @@
 package com.kotlin.kotlin_playground.basics
 
-fun main(){
+fun main() {
     var phrase = "I am learning Kotlin"
     var time = 1
 
@@ -14,7 +14,7 @@ fun main(){
     """.trimIndent())
 
     val position = 1
-    val medal = when(position){
+    val medal = when (position) {
         1 -> "GOLD"
         2 -> "SILVER"
         3 -> "BRONZE"

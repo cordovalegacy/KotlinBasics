@@ -6,19 +6,19 @@ var caseOptions = listOf("snake_case", "camelCase", "PascalCase", "kebab-case")
 
 // Primary constructor
 class OOP(
-    val language: String,
-    val initialCasing: String,
-    var experience: Int = 0
+        val language: String,
+        val initialCasing: String,
+        var experience: Int = 0
 ) {
     // Custom setter for casing
     var casing = initialCasing
-    set(value) {
-        if (value !in caseOptions) {
-            throw InvalidNameException("Not a valid casing option")
-        } else {
-            field = value
+        set(value) {
+            if (value !in caseOptions) {
+                throw InvalidNameException("Not a valid casing option")
+            } else {
+                field = value
+            }
         }
-    }
 }
 
 fun stacks() {
